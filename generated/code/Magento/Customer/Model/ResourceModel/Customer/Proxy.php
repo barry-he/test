@@ -242,14 +242,6 @@ class Proxy extends \Magento\Customer\Model\ResourceModel\Customer implements \M
     /**
      * {@inheritdoc}
      */
-    public function addAttributeByScope(\Magento\Eav\Model\Entity\Attribute\AbstractAttribute $attribute, $entity = null)
-    {
-        return $this->_getSubject()->addAttributeByScope($attribute, $entity);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function isPartialLoad($flag = null)
     {
         return $this->_getSubject()->isPartialLoad($flag);
